@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Open in VS Code</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      background-color: #fafafa;
+    }
+    h2 {
+      color: #0078d7;
+    }
+    input[type="text"] {
+      width: 400px;
+      padding: 8px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #0078d7;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <h2>Open a GitHub Repository in VS Code</h2>
+  <form action="/open-in-vscode" method="get">
+    <input
+      type="text"
+      name="repo_url"
+      placeholder="https://github.com/username/repository.git"
+      required
+    />
+    <button type="submit">Open in VS Code</button>
+  </form>
+
+  <p style="margin-top: 20px; color: #666;">
+    Example: <code>https://github.com/microsoft/vscode.git</code>
+  </p>
+</body>
+</html>
